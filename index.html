@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Souls</title>
+    <link rel="stylesheet" href="image/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar-id" onmouseover="rata()" onmouseleave="tata()">
+            <div class="navbar-item">
+                <img src="image/TWO.gif" id="ds-menu-2">
+            </div>
+            <div class="navbar-item">
+                <p id="brand-id" class="level-7 bold">Dark Souls</p>
+            </div>
+            <div class="navbar-item">
+                <p id="real-nav" class="level-4"><a href="#" class="nav-links">Lore</a></p>
+            </div>
+            <div class="navbar-item">
+                <p id="real-nav-1" class="level-4"><a href="#" class="nav-links">Characters</a></p>
+            </div>
+            <div class="navbar-item">
+                <p id="real-nav-2" class="level-4"><a href="#" class="nav-links">items</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function rata(){
+            document.getElementById("navbar-id").style.width="100%";
+            document.getElementById("ds-menu-2").style.scale="1.1";
+            // document.getElementById("brand-id").style.opacity="1";
+            document.getElementById("brand-id").style.transition="0.4s ease-in";
+            document.getElementById("navbar-id").style.boxShadow="rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px";
+            document.getElementById("real-nav").style.opacity="1";
+            document.getElementById("real-nav").style.transition="0.4s ease-out";
+            document.getElementById("real-nav-1").style.opacity="1";
+            document.getElementById("real-nav-1").style.transition="0.4s ease-out";
+            document.getElementById("real-nav-2").style.opacity="1";
+            document.getElementById("real-nav-2").style.transition="0.4s ease-out";
+        }
+        function tata()
+        {
+            document.getElementById("navbar-id").style.width="450px";
+            document.getElementById("ds-menu-2").style.scale="1";
+            // document.getElementById("brand-id").style.opacity="0";
+            document.getElementById("brand-id").style.transition="0.4s ease-in";
+            document.getElementById("navbar-id").style.boxShadow="none";
+            document.getElementById("real-nav").style.opacity="0";
+            document.getElementById("real-nav").style.transition="0.4s ease-out";
+            document.getElementById("real-nav-1").style.opacity="0";
+            document.getElementById("real-nav-1").style.transition="0.4s ease-out";
+            document.getElementById("real-nav-2").style.opacity="0";
+            document.getElementById("real-nav-2").style.transition="0.4s ease-out";
+        }
+    </script>
+</body>
+</html>
