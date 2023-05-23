@@ -6,9 +6,17 @@
     font-family: bariol-bold;
     src: url(fonts/Bariol/Bariol-Regular&Italic/Desktop/Bariol_Regular_Italic.otf);
 }
+::selection{
+    background-color: #424874;
+    color: #F4EEFF;
+    border-radius: 3px;
+    padding: 3px;
+}
 body{
     font-family: bariol;
-    background-color: rgb(239, 249, 248);
+    /* background-color: rgb(239, 249, 248); */
+    background-color: #F4EEFF;
+    color: #424874;
 }
 .level-1{
     font-size: xx-small;
@@ -28,6 +36,9 @@ body{
 .level-6{
     font-size: larger;
 }
+.level-6_5{
+    font-size:25px;
+}
 .level-7{
     font-size: x-large;
 }
@@ -37,10 +48,10 @@ body{
 .bold{
     font-style: bold;
 }
-.container{
-    padding:5% 15%;
+#containerr-id{
+    padding:3% 12%;
 }
-.navbar{
+#navvbarr-id{
     display: flex;
     /* justify-content: start; */
     align-self: center;
@@ -52,37 +63,93 @@ body{
 #ds-menu-2{
     border-radius: 15px;
     width: 40px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     transition: 0.6s ease-in;
+    margin-left: 5px;
 }
-.navbar-item{
+.navvbarr-item{
     padding: 3px 10px;
 }
 #brand-id{
     /* opacity: 0; */
     font-style: bold;
+    margin-top: 17px;
 }
-.container
+.containerr
 {
     text-decoration: none;
 }
-.nav-links{
+.navv-links{
     text-decoration: none;
-    color: rgb(54, 53, 53);
+    /* color: rgb(54, 53, 53); */
+    color: #424874;
 }
-.nav-links:hover{
+.navv-links:hover{
     color: #FF0303;
 }
-#real-nav{
+#real-navv{
     opacity: 0;
     transition: 0.4s ease-in;
+    margin-top: 17px;
 }
-#real-nav-1{
+#real-navv-1{
     opacity: 0;
     transition: 0.5s ease-in;
+    margin-top: 17px;
 }
-#real-nav-2{
+#real-navv-2{
     opacity: 0;
     transition: 0.6s ease-in;
+    margin-top: 17px;
+}
+
+.main-body{
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 3% 4%;
+    margin-top: 40px;
+    /* background-color: #424874; */
+    border-radius: 5px;
+}
+.main-body-main-heading{
+    text-align: center;
+    padding: 1% 2%;
+}
+#content-id{
+    height: 259px;
+    overflow-y: hidden;
+}
+#readmore{
+    background-color: #F4EEFF;
+    border: none;
+    padding: none;
+    margin: none;
+}
+.content::-webkit-scrollbar{
+    width: 10px;
+}
+.content::-webkit-scrollbar-track{
+    background: #F4EEFF;
+    border-left: 1px solid #424874;
+}
+.content::-webkit-scrollbar-thumb{
+    background: #424874;
+    /* border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; */
+}
+#row-id{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#head-image{
+    width: 300px;
+}
+#badge-img{
+    width: 37px;
+    padding: 3px 5px;
+}
+.badges{
+    display: block;
+    margin-top: 40px;
 }
 
